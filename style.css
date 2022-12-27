@@ -2,3 +2,158 @@
   font-weight: 900;
   color: green;
 }
+
+a {
+  cursor: pointer;
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #191919;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav_items {
+  display: none;
+}
+
+.menu_icon {
+  margin: 1rem;
+}
+
+menu {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+.menu_items {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 100;
+  height: 90vh;
+  margin: 0;
+  padding: 30px 28px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  display: none;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.close_menu_icon {
+  color: #67798e;
+  text-align: end;
+  margin: 0;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.menu_items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.menu_items ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #191919;
+}
+
+@media (min-width: 768px) {
+  .menu_icon {
+    display: none;
+  }
+
+  .nav_items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toolbar_top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    background-color: #272a31;
+    padding-right: 10rem;
+    box-sizing: border-box;
+  }
+
+  .toolbar_top ul {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+  .toolbar_top ul a {
+    color: #fff;
+  }
+
+  .toolbar_top ul li,
+  .icons {
+    list-style: none;
+    color: #fff;
+  }
+
+  .toolbar_bottom {
+    display: flex;
+    color: #272a31;
+    justify-content: space-around;
+    background-color: #ffffff;
+  }
+
+  .toolbar_bottom nav {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .toolbar_bottom a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #272a31;
+    font-weight: 600;
+  }
+
+  .toolbar_bottom a:active {
+    color: #ec5242;
+  }
+
+  a[tabindex]:focus {
+    color: #ec5242;
+    outline: none;
+  }
+}
