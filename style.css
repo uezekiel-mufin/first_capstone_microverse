@@ -1,13 +1,9 @@
-.title {
-  font-weight: 900;
-  color: green;
-}
-
 a {
   cursor: pointer;
 }
 
-body {
+body,
+html {
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
@@ -15,6 +11,8 @@ body {
   color: #191919;
   font-family: 'Lato', sans-serif;
 }
+
+/**************************************** Navbar **********************************************************/
 
 .nav_items {
   display: none;
@@ -90,7 +88,82 @@ menu {
   color: #191919;
 }
 
+/************************************ Headline section **********************************************/
+.headline_section {
+  background-image: url('./images/headline_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.headline_item {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: #d3d3d3;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.headline_time {
+  margin-top: 2rem;
+}
+
+.headline_date {
+  width: 100%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  justify-content: center;
+  padding-right: 1rem;
+  font-size: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.headline_venue {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+h4 {
+  margin: 0.5rem;
+}
+
+.headline_header {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ec5242;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.headline_header span {
+  color: #d3d3d3;
+}
+
+.headline_description {
+  color: #ffffff;
+  padding: 10px;
+  line-height: 2rem;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+/************************************************* Media Query breakpoints ******************************************/
+
 @media (min-width: 768px) {
+  /***************************** Navbar ********************************/
   .menu_icon {
     display: none;
   }
@@ -155,5 +228,66 @@ menu {
   a[tabindex]:focus {
     color: #ec5242;
     outline: none;
+  }
+
+  /************************************ Headline section **********************************************/ /************************************ Headline section **********************************************/
+  .headline_section {
+    background-image: url('./images/headline_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .headline_item {
+    align-items: flex-start;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 7%;
+    width: 70%;
+    color: #d3d3d3;
+    text-transform: capitalize;
+  }
+
+  .headline_date {
+    width: 50%;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    justify-content: center;
+    padding-right: 1rem;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  h4 {
+    margin: 0.5rem;
+  }
+
+  .headline_header {
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: #ec5242;
+    line-height: 6.5rem;
+    margin: 0;
+    text-align: start;
+  }
+
+  .headline_header span {
+    color: #d3d3d3;
+  }
+
+  .headline_description {
+    color: #ffffff;
+    padding: 10px;
+    width: 70%;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    text-align: start;
   }
 }
