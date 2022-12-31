@@ -58,40 +58,90 @@ speakersHeader.className = 'speakers_header';
 const speakersContainer = document.createElement('section');
 speakersContainer.className = 'speakers_container';
 
-for (let i = 0; i < speakersData.length; i += 1) {
-  const { name, image, title, description } = speakersData[i];
-  const speaker = document.createElement('div');
-  speaker.className = 'speaker_item';
+const arrowDown = document.createElement('span');
+arrowDown.className = 'material-symbols-outlined';
+arrowDown.innerText = 'keyboard_arrow_down';
 
-  const speakerImage = document.createElement('img');
-  speakerImage.className = 'speaker_image';
-  speakerImage.src = image;
-  speakerImage.style.width = '300px';
-  speakerImage.style.height = '300px';
+const moreButton = document.createElement('button');
+moreButton.textContent = 'More';
+moreButton.className = 'show_more';
+let numb = window.innerWidth >= 768 ? speakersData.length : 2;
 
-  const speakerDetails = document.createElement('div');
-  speakerDetails.className = 'speaker_details';
+// functionality to generate the speakers section html markup on page load
+const generateMarkUp = () => {
+  for (let i = 0; i < speakersData.slice(0, numb).length; i += 1) {
+    const { name, image, title, description } = speakersData[i];
+    const speaker = document.createElement('div');
+    speaker.className = 'speaker_item';
 
-  const speakerName = document.createElement('h3');
-  speakerName.className = 'speaker_name';
-  speakerName.textContent = name;
+    const speakerImage = document.createElement('img');
+    speakerImage.className = 'speaker_image';
+    speakerImage.src = image;
+    speakerImage.style.width = '300px';
+    speakerImage.style.height = '300px';
 
-  const speakerTitle = document.createElement('h3');
-  speakerTitle.className = 'speaker_title';
-  speakerTitle.textContent = title;
+    const speakerDetails = document.createElement('div');
+    speakerDetails.className = 'speaker_details';
 
-  const speakerDescription = document.createElement('h3');
-  speakerDescription.className = 'speaker_description';
-  speakerDescription.textContent = description;
+    const speakerName = document.createElement('h3');
+    speakerName.className = 'speaker_name';
+    speakerName.textContent = name;
 
-  speaker.appendChild(speakerImage);
-  speaker.appendChild(speakerDetails);
-  speakerDetails.appendChild(speakerName);
-  speakerDetails.appendChild(speakerTitle);
-  speakerDetails.appendChild(speakerDescription);
+    const speakerTitle = document.createElement('h3');
+    speakerTitle.className = 'speaker_title';
+    speakerTitle.textContent = title;
 
-  speakersContainer.appendChild(speaker);
-  speakersSection.appendChild(speakersHeader);
-  speakersSection.appendChild(underline);
-  speakersSection.appendChild(speakersContainer);
-}
+    const speakerDescription = document.createElement('h3');
+    speakerDescription.className = 'speaker_description';
+    speakerDescription.textContent = description;
+
+    speaker.appendChild(speakerImage);
+    speaker.appendChild(speakerDetails);
+    speakerDetails.appendChild(speakerName);
+    speakerDetails.appendChild(speakerTitle);
+    speakerDetails.appendChild(speakerDescription);
+
+    speakersContainer.appendChild(speaker);
+    speakersSection.appendChild(speakersHeader);
+    speakersSection.appendChild(underline);
+    speakersSection.appendChild(speakersContainer);
+    speakersSection.appendChild(moreButton);
+    moreButton.appendChild(arrowDown);
+  }
+};
+generateMarkUp();
+
+// functionality to show more or less of the speakers section when the more button is clicked
+moreButton.addEventListener('click', () => {
+  if (moreButton.className === 'show_more') {
+    numb = speakersData.length;
+    speakersContainer.innerHTML = '';
+    moreButton.textContent = 'show less';
+    moreButton.className = 'show_less';
+    arrowDown.className = 'material-symbols-outlined';
+    arrowDown.innerText = 'keyboard_arrow_up';
+    generateMarkUp();
+  } else {
+    numb = 2;
+    speakersContainer.innerHTML = '';
+    moreButton.textContent = 'More';
+    moreButton.appendChild(arrowDown);
+    moreButton.className = 'show_more';
+    arrowDown.className = 'material-symbols-outlined';
+    arrowDown.innerText = 'keyboard_arrow_down';
+    generateMarkUp();
+  }
+});
+
+// functionality to show more or less of the speakers section content depending on the browser width
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 768) {
+    numb = 2;
+    speakersContainer.innerHTML = '';
+    generateMarkUp();
+  } else {
+    numb = speakersData.length;
+    speakersContainer.innerHTML = '';
+    generateMarkUp();
+  }
+});
