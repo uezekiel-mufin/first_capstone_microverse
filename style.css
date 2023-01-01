@@ -203,7 +203,7 @@ h4 {
   gap: 0.7rem;
 }
 
-.icons_material {
+#icons_material {
   font-size: 2.5rem;
   color: #272a31;
 }
@@ -308,6 +308,92 @@ h4 {
   color: #ec5242;
   font-size: 2rem;
   font-weight: 600;
+}
+
+/**************** Partners section **************/
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272a31;
+  /* background-color: black; */
+  color: #d3d3d3;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.sponsors_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.partners h3 {
+  margin: 0;
+  border-radius: 10px;
+}
+
+.dilitrust {
+  color: #444;
+}
+
+.flighthub {
+  font-weight: 900;
+}
+
+.hub {
+  font-weight: 500;
+}
+
+.mirego {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sponsors_header {
+  margin: 0;
+  text-align: center;
+}
+
+.sponsors_header_underline {
+  border-bottom: 4px solid #ec5242;
+  width: 3rem;
+  text-align: center;
+  height: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/************* Footer Section ***************/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer_header {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  font-weight: 500;
 }
 /************************************************* Media Query breakpoints ******************************************/
 
@@ -546,6 +632,16 @@ h4 {
   .show_more,
   .show_less {
     display: none;
+  }
+
+  /************* Footer Section ***************/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    padding: 1rem 0;
+    align-items: center;
   }
 }
 
