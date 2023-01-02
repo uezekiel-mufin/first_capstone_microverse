@@ -95,7 +95,6 @@ menu {
 }
 
 .about_headline_item {
-  position: absolute;
   top: 20%;
   width: 100%;
   color: #d3d3d3;
@@ -105,6 +104,7 @@ menu {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .about_logo {
@@ -120,11 +120,13 @@ menu {
   box-sizing: border-box;
   width: max-content;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .about_logo_header {
   text-align: center;
   margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 .about_header_underline {
@@ -138,7 +140,7 @@ menu {
 
 .about_logo_description {
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
 
 .about_logo p {
@@ -155,11 +157,13 @@ menu {
   border: 1px solid gray;
   border-left: none;
   border-right: none;
+  margin-top: 0.5rem;
+  font-size: 13px;
 }
 
 .about_conference {
-  border: 1px solid #272a31;
-  padding: 30px 30px;
+  border: 1px solid rgb(230, 227, 227);
+  padding: 30px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,6 +173,80 @@ menu {
 
 .headline_time {
   margin-top: 2rem;
+}
+
+/************* History *****************/
+#history {
+  border-top: 1px solid rgb(230, 227, 227);
+  padding: 50px 0 80px 0;
+}
+
+#history article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history_header {
+  margin-bottom: 0;
+}
+
+.history_header_underline {
+  border-bottom: 4px solid #ec5242;
+  width: 3rem;
+  text-align: center;
+  height: 1rem;
+  margin: 0;
+}
+
+#history ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 1rem;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.history_header_description {
+  text-align: center;
+}
+
+#history ul li {
+  list-style: none;
+}
+
+.first_program {
+  background-image: url('./images/first.jpg');
+  background-color: rgba(194, 68, 54, 0.8);
+  background-blend-mode: overlay;
+  padding: 50px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.second_program {
+  background-image: url('./images/second.jpg');
+  background-color: rgba(194, 68, 54, 0.8);
+  background-blend-mode: overlay;
+  padding: 50px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.first_program p,
+.second_program p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.program_date {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .headline_date {
@@ -188,11 +266,13 @@ menu {
 .headline_venue {
   font-size: 1rem;
   color: gray;
+  text-align: center;
 }
 
 .headline_email {
   color: #272a31;
   text-align: center;
+  text-decoration: underline;
 }
 
 h4 {
@@ -478,55 +558,30 @@ h4 {
     text-align: center;
   }
 
-  /************ Speakers section ********************/
-
-  #speakers {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    padding: 50px 0;
-  }
-
-  .speakers_header {
+  /******************* About Logo **************/
+  .about_logo_description {
     text-align: center;
-    margin: 0;
-    font-size: 2.5rem;
+    width: 50%;
   }
 
-  .speakers_container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 100%;
-    padding: 0 2%;
-    box-sizing: border-box;
-    gap: 2rem;
-    margin: 0 auto;
-    justify-content: flex-end;
+  .about_logo_header {
+    font-size: 2.2rem;
   }
 
-  .speaker_item {
+  .about_conference {
+    border: 1px solid rgb(230, 227, 227);
+    padding: 30px 50px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
-    gap: 1rem;
-  }
-
-  .speaker_item .speaker_image {
-    width: auto;
-    height: auto;
-  }
-
-  .speaker_header_underline {
-    border-bottom: 4px solid #ec5242;
-    width: 5rem;
+    justify-content: center;
     text-align: center;
+    margin-top: 2rem;
   }
 
-  .show_more,
-  .show_less {
-    display: none;
+  /************* History section ****************/
+  #history ul {
+    display: flex;
+    flex-direction: row;
   }
 
   /************* Footer Section ***************/
