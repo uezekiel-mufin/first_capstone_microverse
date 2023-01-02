@@ -90,17 +90,13 @@ menu {
 
 /*********** Headline section **********************/
 .headline_section {
-  background-image: url('./images/headline_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #f7f3f3;
 }
 
-.headline_item {
+.about_headline_item {
   position: absolute;
-  top: 30%;
+  top: 20%;
   width: 100%;
   color: #d3d3d3;
   text-transform: capitalize;
@@ -109,6 +105,66 @@ menu {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+}
+
+.about_logo {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 50px 0;
+}
+
+.about_logo article {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: max-content;
+  align-items: center;
+}
+
+.about_logo_header {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.about_header_underline {
+  border-bottom: 4px solid #ec5242;
+  width: 3rem;
+  text-align: center;
+  height: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.about_logo_description {
+  text-align: center;
+  width: 50%;
+}
+
+.about_logo p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.about_date {
+  text-align: start;
+}
+
+.about_date p {
+  text-align: center;
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
+}
+
+.about_conference {
+  border: 1px solid #272a31;
+  padding: 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .headline_time {
@@ -130,8 +186,13 @@ menu {
 }
 
 .headline_venue {
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 1rem;
+  color: gray;
+}
+
+.headline_email {
+  color: #272a31;
+  text-align: center;
 }
 
 h4 {
@@ -152,166 +213,14 @@ h4 {
 }
 
 .headline_description {
-  color: #ffffff;
-  padding: 10px;
+  color: #272a31;
+  background-color: #ffffff;
+  padding: 20px;
   line-height: 2rem;
   box-sizing: border-box;
   letter-spacing: 0.1rem;
-  text-align: center;
-}
-
-/****************** Main Program ***************/
-
-#main_program {
-  width: 100%;
-  background-color: #dedede;
-  padding: 3rem 1rem;
-  box-sizing: border-box;
-}
-
-.program {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.program_header {
-  font-size: 1.5rem;
-  margin: 0;
-  color: #191919;
-}
-
-.program_list {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.program_title {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #ec5242;
-}
-
-.program_item {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  background-color: #c4bebe;
-  padding: 1rem;
-  gap: 0.7rem;
-}
-
-#icons_material {
-  font-size: 2.5rem;
-  color: #272a31;
-}
-
-.program_item h3,
-.program_item p {
-  margin: 0;
-}
-
-.program_description {
-  text-align: center;
-  color: #272a31;
-}
-
-.program_button {
-  background-color: #ec5242;
-  color: #ffffff;
-  padding: 20px 20px;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.1rem;
-  margin-top: 2rem;
-}
-
-#speakers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 50px 0;
-}
-
-.speakers_header {
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0;
-  color: #191919;
-}
-
-.speakers_container {
-  display: grid;
-  width: 100%;
-  gap: 1rem;
-}
-
-.speaker_header_underline {
-  border-bottom: 4px solid #ec5242;
-  width: 5rem;
-  text-align: center;
-}
-
-.speaker_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  margin: 1rem;
-  padding: 1rem;
-  box-sizing: border-box;
   border-radius: 10px;
-}
-
-.speaker_item .speaker_image {
-  width: 100%;
-}
-
-/* .speaker_item {
-  scale: 50%;
-} */
-
-.speaker_name {
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: #272a31;
-  margin: 0;
-  width: 100%;
-}
-
-.speaker_title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ec5242;
-  margin: 0;
-}
-
-.speaker_description {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #272a31;
-  margin: 0;
-}
-
-.show_more,
-.show_less {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-  padding: 1rem 1rem;
-  margin: 0 auto;
-  font-size: 1.2rem;
-}
-
-.material-symbols-outlined {
-  color: #ec5242;
-  font-size: 2rem;
-  font-weight: 600;
+  text-align: center;
 }
 
 /**************** Partners section **************/
@@ -401,19 +310,6 @@ h4 {
 }
 /************************************************* Media Query breakpoints ******************************************/
 
-@media (min-width: 500px) {
-  .speakers_container {
-    justify-content: center;
-  }
-
-  .speaker_item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-  }
-}
-
 @media (min-width: 768px) {
   /****** Navbar ********************************/
   .menu_icon {
@@ -484,22 +380,18 @@ h4 {
 
   /************************************ Headline section **********************************************/
   .headline_section {
-    background-image: url('./images/headline_bg.jpg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
     height: 100vh;
     width: 100%;
     position: relative;
   }
 
-  .headline_item {
-    align-items: flex-start;
+  .about_headline_item {
+    align-items: center;
     position: absolute;
     top: 10%;
     bottom: 10%;
-    left: 7%;
-    width: 80%;
+
+    width: 100%;
     color: #d3d3d3;
     text-transform: capitalize;
   }
@@ -522,13 +414,13 @@ h4 {
   }
 
   .headline_header {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     font-weight: 900;
     color: #ec5242;
     line-height: 6.5rem;
     margin: 0;
     width: 90%;
-    text-align: start;
+    text-align: center;
   }
 
   .headline_header span {
@@ -536,12 +428,11 @@ h4 {
   }
 
   .headline_description {
-    color: #ffffff;
-    padding: 10px;
-    width: 60%;
+    width: 70%;
     line-height: 2rem;
     letter-spacing: 0.1rem;
     text-align: start;
+    padding: 40px;
   }
 
   /****************** Main Program ***************/
@@ -654,16 +545,6 @@ h4 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     padding: 0 5%;
     box-sizing: border-box;
-  }
-
-  .headline_header {
-    font-size: 5.5rem;
-    font-weight: 900;
-    color: #ec5242;
-    line-height: 6.5rem;
-    margin: 0;
-    width: 90%;
-    text-align: start;
   }
 
   .speakers_container {

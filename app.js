@@ -77,8 +77,8 @@ const generateMarkUp = () => {
     const speakerImage = document.createElement('img');
     speakerImage.className = 'speaker_image';
     speakerImage.src = image;
-    speakerImage.style.width = '300px';
-    speakerImage.style.height = '300px';
+    speakerImage.style.width = '280px';
+    speakerImage.style.height = '200px';
 
     const speakerDetails = document.createElement('div');
     speakerDetails.className = 'speaker_details';
