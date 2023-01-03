@@ -68,7 +68,7 @@ This Project was built with the following technologies
 
 No Live Demo for this project yet
 
-- [Live Demo Link](https://ezzywealth.github.io/microverse_portfolio/)
+- [Live Demo Link](https://ezzywealth.github.io/first_capstone_microverse/about.html/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
