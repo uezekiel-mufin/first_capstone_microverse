@@ -1,14 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-
-  <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse Capstone Porject - Javascript ES2023 Conference</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
