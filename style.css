@@ -196,7 +196,7 @@ h4 {
 
 #main_program {
   width: 100%;
-  background-image: url('/images/sectionBg.png');
+  background-image: url('./images/sectionBg.png');
   padding: 3rem 1rem;
   box-sizing: border-box;
 }
