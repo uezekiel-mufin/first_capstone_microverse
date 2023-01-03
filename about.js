@@ -1,7 +1,7 @@
 const menuOpenIcon = document.getElementById('menu_icon');
 const menuCloseIcon = document.querySelector('.close_menu_icon');
 const menuItems = document.querySelector('.menu_items');
-const li = document.querySelectorAll('.menu_items li');
+const li = document.querySelectorAll('.menu_items nav a');
 
 // functionality to open and close the menu bar
 

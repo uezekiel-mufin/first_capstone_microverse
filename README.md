@@ -24,10 +24,10 @@
 <!-- - [❓ FAQ](#faq) -->
 - [📝 License](#license)
 
-# 📰 My Portfolio <a name="about-project"></a>
+# 📰 Capstone Project <a name="about-project"></a>
 
-- This is Conference page made for my first capstone project.
-  [link to Short Description](https://www.loom.com/share/7be14867a3704c42bb15bcf1088a6a56)
+- This project is a website for a Javascript conference that hold bi-annually. It showcases all the speakers for the conference, date, venue, sponsors and the program schedule for the conference
+  [link to Short Description](https://www.loom.com/share/37a9fcd1a69544bcbbbd7ae961a6fcb0)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,8 +56,6 @@ This Project was built with the following technologies
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-No Live Demo for this project yet
 
 - [Live Demo Link](https://ezzywealth.github.io/first_capstone_microverse/about.html/)
 
