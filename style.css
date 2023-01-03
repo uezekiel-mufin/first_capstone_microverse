@@ -284,7 +284,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 50px 1rem;
+  padding: 50px 1.01rem;
 }
 
 .speakers_header {
