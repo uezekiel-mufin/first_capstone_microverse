@@ -98,6 +98,7 @@ let numb = window.innerWidth >= 768 ? speakersData.length : 2;
 // functionality to generate the speakers section html markup on page load
 const generateMarkUp = () => {
   for (let i = 0; i < speakersData.slice(0, numb).length; i += 1) {
+    // eslint-disable-next-line object-curly-newline
     const { name, image, title, description } = speakersData[i];
     const speaker = document.createElement('div');
     speaker.className = 'speaker_item';
@@ -109,8 +110,6 @@ const generateMarkUp = () => {
     const speakerImage = document.createElement('img');
     speakerImage.className = 'speaker_image';
     speakerImage.src = image;
-    // speakerImage.style.width = '200px';
-    // speakerImage.style.height = '160px';
 
     const speakerDetails = document.createElement('div');
     speakerDetails.className = 'speaker_details';
