@@ -248,7 +248,7 @@ menu {
   background-blend-mode: overlay;
   padding: 50px;
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .second_program {
@@ -257,7 +257,7 @@ menu {
   background-blend-mode: overlay;
   padding: 50px;
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .first_program p,
@@ -319,7 +319,7 @@ h4 {
 
 .headline_description {
   color: #272a31;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   line-height: 2rem;
   box-sizing: border-box;
@@ -334,7 +334,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   background-color: #272a31;
-  /* background-color: black; */
   color: #d3d3d3;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -413,10 +412,10 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
 }
+
 /************************************************* Media Query breakpoints ******************************************/
 
 @media (min-width: 768px) {
-  /****** Navbar ********************************/
   .menu_icon {
     display: none;
   }
@@ -448,6 +447,13 @@ h4 {
     font-size: 12px;
   }
 
+  .toolbar_bottom a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #272a31;
+    font-weight: 600;
+  }
+
   .toolbar_top ul a {
     color: #fff;
   }
@@ -462,20 +468,13 @@ h4 {
     display: flex;
     color: #272a31;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .toolbar_bottom nav {
     display: flex;
     align-items: center;
     gap: 4rem;
-  }
-
-  .toolbar_bottom a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #272a31;
-    font-weight: 600;
   }
 
   .toolbar_bottom a:active {
@@ -499,7 +498,6 @@ h4 {
     position: absolute;
     top: 10%;
     bottom: 10%;
-
     width: 100%;
     color: #d3d3d3;
     text-transform: capitalize;

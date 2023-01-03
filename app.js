@@ -4,56 +4,55 @@ const speakersData = [
     image: './images/david.jpg',
     title: 'Frontend Engineer @ Uber',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+      'With years of experience, David will be enlightening us on the future of frontend development.',
   },
   {
     name: 'Gift Akanji',
     image: './images/gift.jpg',
     title: 'Open source Developer @ FlightControl',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+      'Haven contributed to over 100 open source projects, Gift will take us on how to become a successful open source contributor',
   },
   {
     name: 'Michael Strings',
     image: './images/michael.jpg',
     title: 'Senior Full-Stack Developer @ Walmart',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+      'Michael a succssful fullstack engineer would give us detailed information on becoming like him.',
   },
   {
     name: 'Anita Burkes',
     image: './images/anita.jpg',
     title: 'Developer Advocate @ CloudFlare',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+    description: 'Anita would give us ensights into her field',
   },
   {
     name: 'Jessica Thomas',
     image: './images/jessica.jpg',
     title: 'Head Developer Advocate @ Fusebit',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+      'Jessica would speak to us about the upcoming release in JS and how it would make life easy for developers',
   },
   {
     name: 'Lewis Philips',
     image: './images/lewis.jpg',
     title: 'Frontend Developer @ Platzi',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+      'Lewis a successful frontend engineer would speak to us about his journey and JS as the language of the web.',
   },
   {
     name: 'Blake Henderson',
     image: './images/Blake.jpg',
     title: 'Staff Developer Relations Engineer @ Firebase',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+      'Blake would speak to us about the Development industry at large',
   },
   {
     name: 'Sarah Nicoletti',
     image: './images/nicoletti.jpg',
     title: 'Director of Developer Advocacy @ Cloudinary',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsam voluptatem ipsa optio architecto adipisci sequi libero earum nihil',
+      'Sarah would speak to us about the challenges facing the industry and how we can benefit from those challanges',
   },
 ];
 

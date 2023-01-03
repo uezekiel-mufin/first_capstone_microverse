@@ -195,7 +195,6 @@ h4 {
 
 #main_program {
   width: 100%;
-  /* background-color: #272a31; */
   background-image: url('/images/sectionBg.png');
   padding: 3rem 1rem;
   box-sizing: border-box;
@@ -259,7 +258,7 @@ h4 {
 
 .program_button {
   background-color: #ec5242;
-  color: #ffffff;
+  color: #fff;
   padding: 30px 50px;
   border-radius: 5px;
   border: none;
@@ -279,7 +278,6 @@ h4 {
   margin-bottom: 0;
   text-align: center;
   font-size: 1.5rem;
-  margin: 0;
   color: #191919;
 }
 
@@ -384,7 +382,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   background-color: #272a31;
-  /* background-color: black; */
   color: #d3d3d3;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -463,10 +460,12 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
 }
+
 /************************************************* Media Query breakpoints ******************************************/
 
 @media (min-width: 768px) {
   /****** Navbar ********************************/
+
   .menu_icon {
     display: none;
   }
@@ -505,6 +504,13 @@ h4 {
     font-size: 12px;
   }
 
+  .toolbar_bottom a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #272a31;
+    font-weight: 600;
+  }
+
   .toolbar_top ul a {
     color: #fff;
   }
@@ -519,20 +525,13 @@ h4 {
     display: flex;
     color: #272a31;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .toolbar_bottom nav {
     display: flex;
     align-items: center;
     gap: 4rem;
-  }
-
-  .toolbar_bottom a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #272a31;
-    font-weight: 600;
   }
 
   .toolbar_bottom a:active {
@@ -731,7 +730,6 @@ h4 {
     align-items: center;
     width: 100%;
     gap: 1rem;
-    /* padding: ; */
   }
 }
 
