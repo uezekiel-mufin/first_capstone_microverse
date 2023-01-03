@@ -4,7 +4,6 @@ a {
 
 body,
 html {
-  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +11,18 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+main {
+  padding-top: 64px;
+}
+
 /************** Navbar *************************/
+
+.toolbar {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+}
 
 .nav_items {
   display: none;
@@ -46,6 +56,20 @@ menu {
   display: none;
   flex-direction: column;
   gap: 34px;
+  animation-duration: 2s;
+  animation-name: dropDown;
+}
+
+@keyframes dropDown {
+  from {
+    margin-top: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
 }
 
 .close_menu_icon {
@@ -70,7 +94,7 @@ menu {
   text-decoration: none;
   color: inherit;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .logo {
@@ -284,6 +308,7 @@ h4 {
   font-weight: 900;
   color: #ec5242;
   margin: 0;
+  margin-bottom: 1rem;
   box-sizing: border-box;
   text-align: center;
 }
@@ -394,6 +419,10 @@ h4 {
   /****** Navbar ********************************/
   .menu_icon {
     display: none;
+  }
+
+  main {
+    padding-top: 90px;
   }
 
   .nav_items {
