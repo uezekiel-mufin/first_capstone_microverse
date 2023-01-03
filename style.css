@@ -139,6 +139,7 @@ menu {
   margin-top: 2rem;
   color: #272a31;
   font-size: 1.5rem;
+  line-height: 2.5rem;
   font-weight: 900;
 }
 
@@ -264,6 +265,10 @@ h4 {
   border: none;
   font-size: 1.3rem;
   margin-top: 2rem;
+}
+
+.see_the_program {
+  display: none;
 }
 
 #speakers {
@@ -400,6 +405,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .partners h3 {
@@ -555,8 +561,8 @@ h4 {
     position: absolute;
     top: 10%;
     bottom: 10%;
-    left: 7%;
-    width: 80%;
+    left: 15%;
+    width: 60%;
     color: #d3d3d3;
     text-transform: capitalize;
   }
@@ -640,6 +646,22 @@ h4 {
 
   .program_description {
     text-align: center;
+  }
+
+  .program_button {
+    display: none;
+  }
+
+  .see_the_program {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    margin-top: 3rem;
+    color: #f9f9f9;
+    font-weight: 400;
+    text-decoration: underline;
   }
 
   /************ Speakers section ********************/
