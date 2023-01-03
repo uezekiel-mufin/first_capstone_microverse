@@ -117,7 +117,7 @@ menu {
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   box-sizing: border-box;
 }
 
@@ -172,8 +172,6 @@ h4 {
   background: linear-gradient(to right, #773103, #ec5242, #ec5242);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-
-  /* color: #ec5242; */
   margin: 0;
   box-sizing: border-box;
 }
@@ -585,10 +583,9 @@ h4 {
   }
 
   .headline_header {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 900;
     color: #ec5242;
-    line-height: 6.5rem;
     margin: 0;
     width: 90%;
     text-align: start;
@@ -600,7 +597,7 @@ h4 {
 
   .headline_description {
     padding: 10px;
-    width: 60%;
+    width: 80%;
     text-align: start;
     font-size: 1.1rem;
   }
@@ -732,10 +729,9 @@ h4 {
   }
 
   .headline_header {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     font-weight: 900;
     color: #ec5242;
-    line-height: 6.5rem;
     margin: 0;
     width: 90%;
     text-align: start;
