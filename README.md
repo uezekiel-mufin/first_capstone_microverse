@@ -36,7 +36,7 @@
 # 📰 My Portfolio <a name="about-project"></a>
 
 - This is Conference page made for my first capstone project.
-  [link to Short Description](https://ezzywealth.github.io/microverse_portfolio/)
+  [link to Short Description](https://www.loom.com/share/7be14867a3704c42bb15bcf1088a6a56)
 
 ## 🛠 Built With <a name="built-with"></a>
 

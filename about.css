@@ -297,6 +297,7 @@ menu {
   color: #272a31;
   text-align: center;
   text-decoration: underline;
+  text-transform: lowercase;
 }
 
 h4 {
