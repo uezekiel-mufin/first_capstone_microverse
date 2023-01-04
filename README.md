@@ -27,7 +27,7 @@
 # 📰 Capstone Project <a name="about-project"></a>
 
 - This project is a website for a Javascript conference that hold bi-annually. It showcases all the speakers for the conference, date, venue, sponsors and the program schedule for the conference
-  [link to Short Description](https://www.loom.com/share/37a9fcd1a69544bcbbbd7ae961a6fcb0)
+  [link to Short Description](https://www.loom.com/share/f46b70fa0c264ac8bf061c76a1ddb3b3)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,7 +57,7 @@ This Project was built with the following technologies
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://ezzywealth.github.io/first_capstone_microverse/about.html/)
+- [Live Demo Link](https://ezzywealth.github.io/first_capstone_microverse//)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
