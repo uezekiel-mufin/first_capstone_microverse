@@ -167,6 +167,14 @@ h4 {
   margin: 0.5rem;
 }
 
+.small_text {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #ec5242;
+  margin: 0;
+  text-transform: capitalize;
+}
+
 .headline_header {
   font-size: 2.9rem;
   font-weight: 900;
@@ -243,7 +251,7 @@ h4 {
 }
 
 .program_item:hover {
-  scale: 102;
+  scale: 1.02;
   border: 1px solid #fff;
   transition-duration: 300ms;
   transition-property: all;
