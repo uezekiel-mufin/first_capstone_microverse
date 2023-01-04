@@ -1,14 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-
-  <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse Capstone Porject</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -33,9 +24,10 @@
 <!-- - [❓ FAQ](#faq) -->
 - [📝 License](#license)
 
-# 📰 My Portfolio <a name="about-project"></a>
+# 📰 Capstone Project <a name="about-project"></a>
 
-- My Portfolio project is a project aimed at building my professional portfolio and also showcase my works and skills as a web developer.
+- This project is a website for a Javascript conference that hold bi-annually. It showcases all the speakers for the conference, date, venue, sponsors and the program schedule for the conference
+  [link to Short Description](https://www.loom.com/share/f46b70fa0c264ac8bf061c76a1ddb3b3)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,19 +45,19 @@ This Project was built with the following technologies
 ### Key Features <a name="key-features"></a>
 
 - Navbar
+- About Page
 - Headline Section
-- Portfolio Section
-- About Section
-- Contact Section
+- Program Section
+- Speakers Section
+- Sponsors Section
 - Footer Section
+- Logo Section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-No Live Demo for this project yet
-
-- [Live Demo Link](https://ezzywealth.github.io/microverse_portfolio/)
+- [Live Demo Link](https://ezzywealth.github.io/first_capstone_microverse//)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +76,7 @@ In order to run this project you need to run the following command:
 Clone this repository to your desired folder:
 
 - cd my-folder
-- git clone https://github.com/Ezzywealth/microverse_portfolio.git
+- git clone https://github.com/Ezzywealth/first_capstone_microverse
 
 ### Install
 
@@ -138,7 +130,7 @@ If you like this project kindly reach out to be for any show of support.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for giving us this task to build our portfolio using template and designs provided by them.
+I would like to thank Microverse for giving us this task to build our first capstone project using template and designs provided [Cindy Shin](https://www.behance.net/adagio07).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

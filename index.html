@@ -4,15 +4,189 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c6f4ddbd48.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
-    <header>
-      <h1 class="title">this is the header</h1>
+    <header class="toolbar">
+      <menu class="menu_items">
+        <p class="close_menu_icon">X</p>
+        <nav>
+          <a href="./about.html" tabindex="2">About</a>
+          <a href="#main_program" tabindex="3">Program</a>
+          <a href="#speakers" tabindex="4">Speakers</a>
+          <a href="#sponsors" tabindex="5"> Sponsors</a>
+        </nav>
+      </menu>
+      <nav class="menu_icon">
+        <i class="fa-solid fa-bars" id="menu_icon"></i>
+      </nav>
+      <div class="nav_items">
+        <div class="toolbar_top">
+          <ul class="socials">
+            <li class="icons icons1">
+              <a href="https://twitter.com/EzzyWealth"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="icons icons2">
+              <a href="https://www.linkedin.com/in/ezekiel-udiomuno-b14539150/">
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+
+            <li class="icons icons4">
+              <a href="https://github.com/Ezzywealth"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+          <ul>
+            <li>English</li>
+            <li>My Page</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+        <div class="toolbar_bottom">
+          <a href="./index.html"
+            ><img src="./images/javascript-39424.png" alt="logo" class="logo"
+          /></a>
+
+          <nav>
+            <a href="#" tabindex="1">Home</a>
+            <a href="./about.html" tabindex="2">About</a>
+            <a href="#main_program" tabindex="3">Program</a>
+            <a href="#speakers" tabindex="4">Speakers</a>
+            <a href="#sponsors" tabindex="5"> Sponsors</a>
+            <h3 class="js_camp">JS Campaign</h3>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
-      <section>this is the headline section</section>
+      <section class="headline_section">
+        <article class="headline_item">
+          <p class="small_text">"Hello! JS World"</p>
+          <h1 class="headline_header">
+            #1 Javascript <br />
+            Conference On the Planet
+          </h1>
+          <p class="headline_description">
+            Join us, in the first Nigerian edition, of the most prestigious
+            JavaScript conference. <br />
+            2days of international speakers, community, learning and
+            connections.
+          </p>
+          <h4 class="headline_time">2023.02.25(Wed) ~ 27(Fri)</h4>
+          <h4 class="headline_venue">@ Eko Hotels, Lagos, Nigeria</h4>
+        </article>
+      </section>
+
+      <section id="main_program">
+        <article class="program">
+          <h2 class="program_header">Main Program</h2>
+          <span class="program_header_underline"></span>
+          <article class="program_list">
+            <div class="program_item">
+              <span class="material-icons icons_material" id="icons_material">
+                comment_bank
+              </span>
+              <h3 class="program_title">Lecture</h3>
+              <p class="program_description">
+                Listen to the speakers from various countries about the messages
+                of sharing and opening
+              </p>
+            </div>
+            <div class="program_item">
+              <span class="material-icons" id="icons_material">
+                connected_tv
+              </span>
+              <h3 class="program_title">JS Exhibition</h3>
+              <p class="program_description">
+                Appreciate various creations applying JS license of artists,
+                organized from Art Center Lagos.
+              </p>
+            </div>
+            <div class="program_item">
+              <span class="material-icons icons_material" id="icons_material">
+                forum
+              </span>
+              <h3 class="program_title">Forum</h3>
+              <p class="program_description">
+                Have the time to share your thoughs and opinions with the
+                experts for each topic
+              </p>
+            </div>
+            <div class="program_item">
+              <span class="material-icons icons_material" id="icons_material">
+                business_center
+              </span>
+              <h3 class="program_title">Workshop</h3>
+              <p class="program_description">
+                Try creating your own work using open source license rather than
+                just watching
+              </p>
+            </div>
+            <div class="program_item">
+              <span class="material-symbols-outlined" id="icons_material">
+                light_mode
+              </span>
+              <h3 class="program_title">JS Ignite</h3>
+              <p class="program_description">
+                Get opportunities to network with JS affiliates around the
+                world, also after the summit
+              </p>
+            </div>
+          </article>
+          <button class="see_the_program">See the whole Program</button>
+          <button class="program_button">JOIN JS Global Conf 2023</button>
+        </article>
+      </section>
+
+      <section id="speakers"></section>
+
+      <section id="sponsors">
+        <article class="sponsors_section">
+          <h1 class="sponsors_header">Partners</h1>
+          <h6 class="sponsors_header_underline"></h6>
+          <div class="partners">
+            <h3 class="diliTrust">DiliTrust</h3>
+            <h3 class="flighthub">Flight<span class="hub">Hub</span></h3>
+            <h3 class="sherweb">Sherweb</h3>
+            <h3 class="mirego">Mirego</h3>
+            <h3 class="safeStack">SafeStack</h3>
+          </div>
+        </article>
+      </section>
+
+      <section id="footer">
+        <article class="footer">
+          <div class="footer_logo">
+            <img src="./images/javascript-39424.png" alt="logo" class="logo" />
+            <h2 class="footer_header">
+              Javascript <br />
+              Conference 2023
+            </h2>
+          </div>
+          <p>&copy; 2023, All rights reserved</p>
+        </article>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
