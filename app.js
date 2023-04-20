@@ -93,6 +93,7 @@ arrowDown.innerText = 'keyboard_arrow_down';
 const moreButton = document.createElement('button');
 moreButton.textContent = 'More';
 moreButton.className = 'show_more';
+moreButton.type = 'button';
 let numb = window.innerWidth >= 768 ? speakersData.length : 2;
 
 // functionality to generate the speakers section html markup on page load
