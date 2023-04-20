@@ -625,8 +625,7 @@ h4 {
   }
 
   .headline_description {
-    padding: 10px;
-    width: 80%;
+    padding: 2rem 10px;
     text-align: start;
     font-size: 1.1rem;
   }
