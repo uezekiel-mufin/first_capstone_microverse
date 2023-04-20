@@ -9,7 +9,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   color: #191919;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 /************** Navbar *************************/
@@ -112,7 +112,7 @@ menu {
 /*********** Headline section **********************/
 
 .headline_section {
-  background-image: url("./images/headline_bg.jpg");
+  background-image: url('./images/headline_bg.jpg');
   background-color: rgba(241, 241, 241, 0.7);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ h4 {
 
 #main_program {
   width: 100%;
-  background-image: url("./images/sectionBg.png");
+  background-image: url('./images/sectionBg.png');
   padding: 3rem 1rem;
   box-sizing: border-box;
 }
@@ -345,7 +345,7 @@ h4 {
   position: absolute;
   top: -20%;
   left: -15%;
-  background-image: url("./images/sqbgDark.png");
+  background-image: url('./images/sqbgDark.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 50%;
@@ -702,6 +702,15 @@ h4 {
     padding: 50px 0;
   }
 
+  .speaker_item {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+  }
+
   .speakers_header {
     text-align: center;
     margin: 0;
@@ -729,12 +738,16 @@ h4 {
     position: absolute;
     top: -20%;
     left: -15%;
-    background-image: url("./images/sqbgGray.png");
+    background-image: url('./images/sqbgGray.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 50%;
     width: 50%;
     z-index: -1;
+  }
+
+  .speaker_image {
+    width: 8.5rem;
   }
 
   .show_more,
@@ -762,6 +775,10 @@ h4 {
 
   .headline_item {
     width: 70%;
+  }
+
+  .speaker_image {
+    width: 12.5rem;
   }
 
   .headline_header {
